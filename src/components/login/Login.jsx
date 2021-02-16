@@ -21,7 +21,7 @@ const Login = ({authService}) => {
         authService
             .onAuthChange(user => {
                 user && goToMaker(user.uid);
-            })
+            });
     });
     return (
         <section className={styles.login}>

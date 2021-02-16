@@ -1,0 +1,4 @@
+@value makerGreen, makerLightPink, makerWhite from '../../common/colors.css';
+
+.preview{flex-basis: 50%;}
+.title{width: 100%;text-align: center;margin-bottom: 1em;color:makerGreen;}
