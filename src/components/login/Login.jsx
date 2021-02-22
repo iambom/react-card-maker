@@ -15,7 +15,10 @@ const Login = ({authService}) => {
     const onLogin = (event) => {
         authService
             .login(event.currentTarget.textContent)
-            .then(data => goToMaker(data.user.uid));
+            .then(data => {
+                console.log(data)
+                goToMaker(data.user.uid)
+            });
     }
     useEffect(() => {
         authService
